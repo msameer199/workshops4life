@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - Workshops 4 Life</title>
 
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #1e2a38;
+}
+
+header {
+    background: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tagline {
+    font-size: 13px;
+    color: gray;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1e2a38;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #2d6cdf;
+}
+
+.button {
+    background: #2d6cdf;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.dashboard-container {
+    padding: 60px 50px;
+}
+
+.dashboard-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.progress-bar {
+    background: #e0e6ef;
+    border-radius: 10px;
+    height: 10px;
+    margin-top: 10px;
+}
+
+.progress-fill {
+    background: #2d6cdf;
+    height: 10px;
+    width: 65%;
+    border-radius: 10px;
+}
+
+.table-section {
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background: #2d6cdf;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f4f7fb;
+}
+
+footer {
+    background: #1e2a38;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <div class="logo">Workshops 4 Life</div>
+        <div class="tagline">Skill Sprints by Chi Balance Pty Ltd</div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="skillsprints.html">Skill Sprints</a>
+        <a href="submitevidence.html">Submit Evidence</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="login.html" class="button">Login</a>
+    </nav>
+</header>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-title">Organisation Dashboard</div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Total Learners</h3>
+            <p style="font-size:28px; font-weight:bold;">120</p>
+        </div>
+
+        <div class="card">
+            <h3>Badges Issued</h3>
+            <p style="font-size:28px; font-weight:bold;">85</p>
+        </div>
+
+        <div class="card">
+            <h3>Overall Completion</h3>
+            <p>65% Completed</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-section">
+        <h2>Recent Evidence Submissions</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Sprint</th>
+                <th>Status</th>
+                <th>Badge</th>
+            </tr>
+            <tr>
+                <td>John Smith</td>
+                <td>Design Your Life</td>
+                <td>Approved</td>
+                <td>Issued</td>
+            </tr>
+            <tr>
+                <td>Sarah Lee</td>
+                <td>Communicate with Impact</td>
+                <td>Pending</td>
+                <td>Not Issued</td>
+            </tr>
+            <tr>
+                <td>Michael Tan</td>
+                <td>Lead with Confidence</td>
+                <td>Approved</td>
+                <td>Issued</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<footer>
+    © 2024 Workshops 4 Life – Operated by Chi Balance Pty Ltd
+</footer>
+
+</body>
+</html>
